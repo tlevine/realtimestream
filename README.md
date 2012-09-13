@@ -53,6 +53,25 @@ To get started in ubuntu, we first use `aptitude` to get dependencies, and then 
   9. `cd ../simplequeue`
   10. `make ; sudo make install`
 
+## Arch Linux guide ##
+
+To get started in ubuntu, we first use `pacman` to get dependencies, and then we use `pip2` to download the python libraries and manually compile the requirements in `simplehttp`.
+
+  0. (Dunno what to put here; I already had most of the dependencies)
+  1. `sudo pip2 install numpy "pysimplehttp>=0.2.1" host_pool`
+  2. `sudo pip2 install ujson`
+    * Note: If you get an error installing ujson, don't sweat it.  Nothing depends on it, but it is a really great and fast alternative to json/simplejson. 
+  4. `git clone https://github.com/bitly/simplehttp.git`
+  5. `cd simplehttp/simplehttp`
+
+I'd prefer if the following steps were a package built with makepkg.
+
+  6. `make ; sudo make install`
+  7. `cd ../pubsub/`
+  8. `make ; sudo make install`
+  9. `cd ../simplequeue`
+  10. `make ; sudo make install`
+
 ## Windows guide ##
 
 We currently do not support windows.  If you have any success installing the required programs in windows, please tell us so we can update this section!  For the python requirements, [`pip`](http://pypi.python.org/pypi/pip) and [`enthought`](http://www.enthought.com/) will be useful.
